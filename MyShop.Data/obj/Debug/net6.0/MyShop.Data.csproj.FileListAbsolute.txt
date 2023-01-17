@@ -1,0 +1,17 @@
+D:\Project\Web\MyShop\MyShop.Data\bin\Debug\net6.0\MyShop.Data.deps.json
+D:\Project\Web\MyShop\MyShop.Data\bin\Debug\net6.0\MyShop.Data.runtimeconfig.json
+D:\Project\Web\MyShop\MyShop.Data\bin\Debug\net6.0\MyShop.Data.dll
+D:\Project\Web\MyShop\MyShop.Data\bin\Debug\net6.0\MyShop.Data.pdb
+D:\Project\Web\MyShop\MyShop.Data\bin\Debug\net6.0\MyShop.Common.dll
+D:\Project\Web\MyShop\MyShop.Data\bin\Debug\net6.0\MyShop.Common.pdb
+D:\Project\Web\MyShop\MyShop.Data\obj\Debug\net6.0\MyShop.Data.csproj.AssemblyReference.cache
+D:\Project\Web\MyShop\MyShop.Data\obj\Debug\net6.0\MyShop.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Web\MyShop\MyShop.Data\obj\Debug\net6.0\MyShop.Data.AssemblyInfoInputs.cache
+D:\Project\Web\MyShop\MyShop.Data\obj\Debug\net6.0\MyShop.Data.AssemblyInfo.cs
+D:\Project\Web\MyShop\MyShop.Data\obj\Debug\net6.0\MyShop.Data.csproj.CoreCompileInputs.cache
+D:\Project\Web\MyShop\MyShop.Data\obj\Debug\net6.0\MyShop.Data.csproj.CopyComplete
+D:\Project\Web\MyShop\MyShop.Data\obj\Debug\net6.0\MyShop.Data.dll
+D:\Project\Web\MyShop\MyShop.Data\obj\Debug\net6.0\refint\MyShop.Data.dll
+D:\Project\Web\MyShop\MyShop.Data\obj\Debug\net6.0\MyShop.Data.pdb
+D:\Project\Web\MyShop\MyShop.Data\obj\Debug\net6.0\MyShop.Data.genruntimeconfig.cache
+D:\Project\Web\MyShop\MyShop.Data\obj\Debug\net6.0\ref\MyShop.Data.dll

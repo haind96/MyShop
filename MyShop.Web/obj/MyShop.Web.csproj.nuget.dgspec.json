@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Project\\Web\\MyShop\\MyShop.Web\\MyShop.Web.csproj": {}
+    "D:\\Project\\Web\\MyShop\\MyShop.Web\\MyShop.Web.csproj": {}
   },
   "projects": {
-    "F:\\Project\\Web\\MyShop\\MyShop.Web\\MyShop.Web.csproj": {
+    "D:\\Project\\Web\\MyShop\\MyShop.Common\\MyShop.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Project\\Web\\MyShop\\MyShop.Web\\MyShop.Web.csproj",
-        "projectName": "MyShop.Web",
-        "projectPath": "F:\\Project\\Web\\MyShop\\MyShop.Web\\MyShop.Web.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "F:\\Project\\Web\\MyShop\\MyShop.Web\\obj\\",
+        "projectUniqueName": "D:\\Project\\Web\\MyShop\\MyShop.Common\\MyShop.Common.csproj",
+        "projectName": "MyShop.Common",
+        "projectPath": "D:\\Project\\Web\\MyShop\\MyShop.Common\\MyShop.Common.csproj",
+        "packagesPath": "C:\\Users\\HP laptop\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Web\\MyShop\\MyShop.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,308 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\Web\\MyShop\\MyShop.Data\\MyShop.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\Web\\MyShop\\MyShop.Data\\MyShop.Data.csproj",
+        "projectName": "MyShop.Data",
+        "projectPath": "D:\\Project\\Web\\MyShop\\MyShop.Data\\MyShop.Data.csproj",
+        "packagesPath": "C:\\Users\\HP laptop\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Web\\MyShop\\MyShop.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Project\\Web\\MyShop\\MyShop.Common\\MyShop.Common.csproj": {
+                "projectPath": "D:\\Project\\Web\\MyShop\\MyShop.Common\\MyShop.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\Web\\MyShop\\MyShop.Model\\MyShop.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\Web\\MyShop\\MyShop.Model\\MyShop.Model.csproj",
+        "projectName": "MyShop.Model",
+        "projectPath": "D:\\Project\\Web\\MyShop\\MyShop.Model\\MyShop.Model.csproj",
+        "packagesPath": "C:\\Users\\HP laptop\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Web\\MyShop\\MyShop.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Project\\Web\\MyShop\\MyShop.Common\\MyShop.Common.csproj": {
+                "projectPath": "D:\\Project\\Web\\MyShop\\MyShop.Common\\MyShop.Common.csproj"
+              },
+              "D:\\Project\\Web\\MyShop\\MyShop.Data\\MyShop.Data.csproj": {
+                "projectPath": "D:\\Project\\Web\\MyShop\\MyShop.Data\\MyShop.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\Web\\MyShop\\MyShop.Service\\MyShop.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\Web\\MyShop\\MyShop.Service\\MyShop.Service.csproj",
+        "projectName": "MyShop.Service",
+        "projectPath": "D:\\Project\\Web\\MyShop\\MyShop.Service\\MyShop.Service.csproj",
+        "packagesPath": "C:\\Users\\HP laptop\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Web\\MyShop\\MyShop.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Project\\Web\\MyShop\\MyShop.Common\\MyShop.Common.csproj": {
+                "projectPath": "D:\\Project\\Web\\MyShop\\MyShop.Common\\MyShop.Common.csproj"
+              },
+              "D:\\Project\\Web\\MyShop\\MyShop.Data\\MyShop.Data.csproj": {
+                "projectPath": "D:\\Project\\Web\\MyShop\\MyShop.Data\\MyShop.Data.csproj"
+              },
+              "D:\\Project\\Web\\MyShop\\MyShop.Model\\MyShop.Model.csproj": {
+                "projectPath": "D:\\Project\\Web\\MyShop\\MyShop.Model\\MyShop.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Project\\Web\\MyShop\\MyShop.Web\\MyShop.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\Web\\MyShop\\MyShop.Web\\MyShop.Web.csproj",
+        "projectName": "MyShop.Web",
+        "projectPath": "D:\\Project\\Web\\MyShop\\MyShop.Web\\MyShop.Web.csproj",
+        "packagesPath": "C:\\Users\\HP laptop\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Web\\MyShop\\MyShop.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Project\\Web\\MyShop\\MyShop.Common\\MyShop.Common.csproj": {
+                "projectPath": "D:\\Project\\Web\\MyShop\\MyShop.Common\\MyShop.Common.csproj"
+              },
+              "D:\\Project\\Web\\MyShop\\MyShop.Data\\MyShop.Data.csproj": {
+                "projectPath": "D:\\Project\\Web\\MyShop\\MyShop.Data\\MyShop.Data.csproj"
+              },
+              "D:\\Project\\Web\\MyShop\\MyShop.Model\\MyShop.Model.csproj": {
+                "projectPath": "D:\\Project\\Web\\MyShop\\MyShop.Model\\MyShop.Model.csproj"
+              },
+              "D:\\Project\\Web\\MyShop\\MyShop.Service\\MyShop.Service.csproj": {
+                "projectPath": "D:\\Project\\Web\\MyShop\\MyShop.Service\\MyShop.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -51,8 +353,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -64,7 +365,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

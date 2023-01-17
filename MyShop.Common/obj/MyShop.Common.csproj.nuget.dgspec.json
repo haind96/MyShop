@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Project\\Web\\MyShop\\MyShop.Common\\MyShop.Common.csproj": {}
+    "D:\\Project\\Web\\MyShop\\MyShop.Common\\MyShop.Common.csproj": {}
   },
   "projects": {
-    "F:\\Project\\Web\\MyShop\\MyShop.Common\\MyShop.Common.csproj": {
+    "D:\\Project\\Web\\MyShop\\MyShop.Common\\MyShop.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Project\\Web\\MyShop\\MyShop.Common\\MyShop.Common.csproj",
+        "projectUniqueName": "D:\\Project\\Web\\MyShop\\MyShop.Common\\MyShop.Common.csproj",
         "projectName": "MyShop.Common",
-        "projectPath": "F:\\Project\\Web\\MyShop\\MyShop.Common\\MyShop.Common.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "F:\\Project\\Web\\MyShop\\MyShop.Common\\obj\\",
+        "projectPath": "D:\\Project\\Web\\MyShop\\MyShop.Common\\MyShop.Common.csproj",
+        "packagesPath": "C:\\Users\\HP laptop\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\Web\\MyShop\\MyShop.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,14 +39,23 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -55,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
