@@ -15,3 +15,12 @@ D:\Project\Web\MyShop\MyShop.Data\obj\Debug\MyShop.Data.csproj.CoreCompileInputs
 D:\Project\Web\MyShop\MyShop.Data\obj\Debug\MyShop.Data.csproj.CopyComplete
 D:\Project\Web\MyShop\MyShop.Data\obj\Debug\MyShop.Data.dll
 D:\Project\Web\MyShop\MyShop.Data\obj\Debug\MyShop.Data.pdb
+D:\Project\Web\MyShop\MyShop.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Project\Web\MyShop\MyShop.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Project\Web\MyShop\MyShop.Data\bin\Debug\MyShop.Model.dll
+D:\Project\Web\MyShop\MyShop.Data\bin\Debug\MyShop.Model.pdb
+D:\Project\Web\MyShop\MyShop.Data\bin\Debug\MyShop.Model.dll.config
+D:\Project\Web\MyShop\MyShop.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Project\Web\MyShop\MyShop.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Project\Web\MyShop\MyShop.Data\obj\Debug\MyShop.Data.Migrations.InitialDB.resources
+D:\Project\Web\MyShop\MyShop.Data\obj\Debug\MyShop.Data.csproj.GenerateResource.cache

@@ -1,4 +1,5 @@
-﻿using MyShop.Model.Models;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using MyShop.Model.Models;
 using System.Data.Entity;
 
 namespace MyShop.Data
@@ -12,6 +13,8 @@ namespace MyShop.Data
 
         public DbSet<ApplicationGroup> ApplicationGroups { get; set; }
         public DbSet<ApplicationRoleGroup> ApplicationRoleGroups { get; set; }
+        public DbSet<ApplicationRole> ApplicationRoles { get; set; }
+        public DbSet<ApplicationUserGroup> ApplicationUserGroups {  get; set; }
         public DbSet<Error> Errors { get; set; }
         public DbSet<Feedback> Feedbacks { get; set; }
         public DbSet<ContactDetail> ContactDetails { get; set; }
@@ -33,10 +36,18 @@ namespace MyShop.Data
         public DbSet<Tag> Tags { get; set; }
         public DbSet<VisitorStatistic> VisitorStatistics { get; set; }
 
+        public static MyShopDbContext Create()
+        {
+            return new MyShopDbContext();
+        }
+
         //chay khi khoi tao entity framework
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<IdentityUserRole>().HasKey(i => new { i.UserId, i.RoleId }).ToTable("ApplicationUserRoles");
+            modelBuilder.Entity<IdentityUserLogin>().HasKey(i => i.UserId).ToTable("ApplicationUserLogins");
+            modelBuilder.Entity<IdentityRole>().ToTable("ApplicationRoles");
+            modelBuilder.Entity<IdentityUserClaim>().HasKey(i => i.UserId).ToTable("ApplicationUserClaims");
         }
     }
 }

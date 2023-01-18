@@ -1,4 +1,6 @@
-﻿namespace MyShop.Data.Infrastructure
+﻿using MyShop.Data.Infrastructure.Interfaces;
+
+namespace MyShop.Data.Infrastructure
 {
     public class DbFactory : Disposable, IDbFactory
     {

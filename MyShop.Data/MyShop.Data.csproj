@@ -60,12 +60,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Infrastructure\Disposeable.cs" />
-    <Compile Include="Infrastructure\IDbFactory.cs" />
-    <Compile Include="Infrastructure\IRepository.cs" />
-    <Compile Include="Infrastructure\IUnitOfWork.cs" />
+    <Compile Include="Infrastructure\DbFactory.cs" />
+    <Compile Include="Infrastructure\Disposable.cs" />
+    <Compile Include="Infrastructure\Interfaces\IRepository.cs" />
+    <Compile Include="Infrastructure\Interfaces\IUnitOfWork.cs" />
+    <Compile Include="Infrastructure\Interfaces\IDbFactory.cs" />
+    <Compile Include="Infrastructure\RepositoryBase.cs" />
+    <Compile Include="Infrastructure\UnitOfWork.cs" />
+    <Compile Include="Migrations\202301180658177_InitialDB.cs" />
+    <Compile Include="Migrations\202301180658177_InitialDB.designer.cs">
+      <DependentUpon>202301180658177_InitialDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyShopDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\FooterRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IFooterRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IMenuGroupRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IMenuRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IOrderDetailRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IOrderRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPageRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPostCategoryRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPostRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPostTagRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IProductCategoryRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IProductRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IProductTagRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ISlideRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ISupportOnlineRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ISystemConfigRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ITagRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IVisitorStatisticRepository.cs" />
+    <Compile Include="Repositories\OrderDetailRepository.cs" />
+    <Compile Include="Repositories\SystemConfigRepository.cs" />
+    <Compile Include="Repositories\PostCategoryRepository.cs" />
+    <Compile Include="Repositories\PostTagRepository.cs" />
+    <Compile Include="Repositories\PageRepository.cs" />
+    <Compile Include="Repositories\PostRepository.cs" />
+    <Compile Include="Repositories\MenuGroupRepository.cs" />
+    <Compile Include="Repositories\MenuRepository.cs" />
+    <Compile Include="Repositories\OrderRepository.cs" />
+    <Compile Include="Repositories\ProductCategoryRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Repositories\ProductTagRepository.cs" />
+    <Compile Include="Repositories\SlideRepository.cs" />
+    <Compile Include="Repositories\SupportOnlineRepository.cs" />
+    <Compile Include="Repositories\TagRepository.cs" />
+    <Compile Include="Repositories\VisitorStatisticRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -82,7 +124,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Repositories\" />
+    <EmbeddedResource Include="Migrations\202301180658177_InitialDB.resx">
+      <DependentUpon>202301180658177_InitialDB.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
