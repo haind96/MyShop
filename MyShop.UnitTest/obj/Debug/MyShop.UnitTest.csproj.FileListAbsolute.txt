@@ -61,3 +61,11 @@ D:\Project\Web\MyShop\MyShop.UnitTest\bin\Debug\System.Web.WebPages.Deployment.x
 D:\Project\Web\MyShop\MyShop.UnitTest\obj\Debug\MyShop.UnitTest.csproj.CopyComplete
 D:\Project\Web\MyShop\MyShop.UnitTest\obj\Debug\MyShop.UnitTest.dll
 D:\Project\Web\MyShop\MyShop.UnitTest\obj\Debug\MyShop.UnitTest.pdb
+D:\Project\Web\MyShop\MyShop.UnitTest\bin\Debug\Castle.Core.dll
+D:\Project\Web\MyShop\MyShop.UnitTest\bin\Debug\Moq.dll
+D:\Project\Web\MyShop\MyShop.UnitTest\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Project\Web\MyShop\MyShop.UnitTest\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Project\Web\MyShop\MyShop.UnitTest\bin\Debug\Castle.Core.xml
+D:\Project\Web\MyShop\MyShop.UnitTest\bin\Debug\Moq.xml
+D:\Project\Web\MyShop\MyShop.UnitTest\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Project\Web\MyShop\MyShop.UnitTest\bin\Debug\System.Threading.Tasks.Extensions.xml

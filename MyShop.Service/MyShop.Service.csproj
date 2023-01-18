@@ -54,6 +54,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Services\ErrorService.cs" />
+    <Compile Include="Services\Interfaces\IErrorService.cs" />
     <Compile Include="Services\Interfaces\IPostCategoryService.cs" />
     <Compile Include="Services\Interfaces\IPostService.cs" />
     <Compile Include="Services\PostCategoryService.cs" />
