@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Myshop.Model.Models
+namespace MyShop.Model.Models
 {
     [Table("ApplicationGroups")]
     public class ApplicationGroup

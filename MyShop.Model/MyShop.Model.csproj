@@ -62,7 +62,6 @@
   <ItemGroup>
     <Compile Include="Abstract\Auditable.cs" />
     <Compile Include="Abstract\IAuditable.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Models\ApplicationGroup.cs" />
     <Compile Include="Models\ApplicationRole.cs" />
     <Compile Include="Models\ApplicationRoleGroup.cs" />
@@ -98,10 +97,6 @@
     <ProjectReference Include="..\MyShop.Common\MyShop.Common.csproj">
       <Project>{22223502-8bf2-4a8c-889e-128367b2c9c7}</Project>
       <Name>MyShop.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MyShop.Data\MyShop.Data.csproj">
-      <Project>{2bea8403-fb3e-4a26-8d9c-8114660834de}</Project>
-      <Name>MyShop.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

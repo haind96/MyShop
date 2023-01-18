@@ -1,11 +1,10 @@
-﻿using Myshop.Model.Models;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MyShop.Model.Models
 {
     [Table("ApplicationRoleGroups")]
-    public class ApplicationRoleGroupm
+    public class ApplicationRoleGroup
     {
         [Key]
         [Column(Order = 1)]
