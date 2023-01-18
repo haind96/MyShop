@@ -11,7 +11,7 @@ namespace MyShop.Service.Services.Interfaces
     {
         void Add(PostCategory postCategory);
         void Update(PostCategory postCategory);
-        void Delete(PostCategory postCategory);
+        void Delete(int id);
         IEnumerable<PostCategory> GetAll();
         IEnumerable<PostCategory> GetAllByParentId(int parentId);
         PostCategory GetById(int id);

@@ -4,17 +4,23 @@ namespace MyShop.Data.Infrastructure
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly IDbFactory dbFactory;
-        private MyShopDbContext dbContext;
+        private readonly IDbFactory _dbFactory;
+        private MyShopDbContext _dbContext;
+        private IDbFactory dbFactory;
 
         public UnitOfWork(DbFactory dbFactory)
+        {
+            this._dbFactory = dbFactory;
+        }
+
+        public UnitOfWork(IDbFactory dbFactory)
         {
             this.dbFactory = dbFactory;
         }
 
         public MyShopDbContext DbContext
         {
-            get { return dbContext ?? (dbContext = dbFactory.Init()); }
+            get { return _dbContext ?? (_dbContext = _dbFactory.Init()); }
         }
 
         public void Commit()

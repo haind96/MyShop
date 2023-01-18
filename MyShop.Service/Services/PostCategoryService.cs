@@ -14,34 +14,41 @@ namespace MyShop.Service.Services
     {
         IPostCategoryRepository _postCategoryRepository;
         IUnitOfWork _unitOfWork;
-        public void Add(PostCategory postCategory)
+
+        public PostCategoryService(IPostCategoryRepository postCategoryRepository, IUnitOfWork unitOfWork)
         {
-            throw new NotImplementedException();
+            _postCategoryRepository = postCategoryRepository;
+            _unitOfWork = unitOfWork;
         }
 
-        public void Delete(PostCategory postCategory)
+        public void Add(PostCategory postCategory)
         {
-            throw new NotImplementedException();
+            _postCategoryRepository.Add(postCategory);
+        }
+
+        public void Delete(int id)
+        {
+            _postCategoryRepository.Delete(id);
         }
 
         public IEnumerable<PostCategory> GetAll()
         {
-            throw new NotImplementedException();
+            return _postCategoryRepository.GetAll();
         }
 
         public IEnumerable<PostCategory> GetAllByParentId(int parentId)
         {
-            throw new NotImplementedException();
+            return _postCategoryRepository.GetMulti(x => x.Status && x.ParentID == parentId);
         }
 
         public PostCategory GetById(int id)
         {
-            throw new NotImplementedException();
+            return _postCategoryRepository.GetSingleById(id);
         }
 
         public void Update(PostCategory postCategory)
         {
-            throw new NotImplementedException();
+            _postCategoryRepository.Update(postCategory);
         }
     }
 }
