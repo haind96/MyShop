@@ -1,0 +1,14 @@
+D:\Project\Web\MyShop\MyShop.Common\bin\Debug\MyShop.Common.dll.config
+D:\Project\Web\MyShop\MyShop.Common\bin\Debug\MyShop.Common.dll
+D:\Project\Web\MyShop\MyShop.Common\bin\Debug\MyShop.Common.pdb
+D:\Project\Web\MyShop\MyShop.Common\bin\Debug\EntityFramework.dll
+D:\Project\Web\MyShop\MyShop.Common\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\Web\MyShop\MyShop.Common\bin\Debug\Newtonsoft.Json.dll
+D:\Project\Web\MyShop\MyShop.Common\bin\Debug\EntityFramework.xml
+D:\Project\Web\MyShop\MyShop.Common\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\Web\MyShop\MyShop.Common\bin\Debug\Newtonsoft.Json.xml
+D:\Project\Web\MyShop\MyShop.Common\obj\Debug\MyShop.Common.csproj.AssemblyReference.cache
+D:\Project\Web\MyShop\MyShop.Common\obj\Debug\MyShop.Common.csproj.CoreCompileInputs.cache
+D:\Project\Web\MyShop\MyShop.Common\obj\Debug\MyShop.Common.csproj.CopyComplete
+D:\Project\Web\MyShop\MyShop.Common\obj\Debug\MyShop.Common.dll
+D:\Project\Web\MyShop\MyShop.Common\obj\Debug\MyShop.Common.pdb

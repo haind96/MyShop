@@ -1,0 +1,2 @@
+D:\Project\Web\MyShop\MyShop.Service\obj\Debug\MyShop.Service.csproj.AssemblyReference.cache
+D:\Project\Web\MyShop\MyShop.Service\obj\Debug\MyShop.Service.csproj.CoreCompileInputs.cache

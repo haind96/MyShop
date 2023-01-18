@@ -1,10 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Myshop.Model.Models;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace TeduShop.Model.Models
+namespace MyShop.Model.Models
 {
     [Table("ApplicationRoleGroups")]
-    public class ApplicationRoleGroup
+    public class ApplicationRoleGroupm
     {
         [Key]
         [Column(Order = 1)]

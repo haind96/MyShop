@@ -1,0 +1,2 @@
+D:\Project\Web\MyShop\MyShop.UnitTest\obj\Debug\MyShop.UnitTest.csproj.AssemblyReference.cache
+D:\Project\Web\MyShop\MyShop.UnitTest\obj\Debug\MyShop.UnitTest.csproj.CoreCompileInputs.cache
