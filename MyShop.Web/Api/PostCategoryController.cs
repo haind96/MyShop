@@ -1,19 +1,23 @@
-﻿using MyShop.Model.Models;
+﻿using AutoMapper;
+using MyShop.Model.Models;
 using MyShop.Service.Services.Interfaces;
 using MyShop.Web.Infrastructure.Core;
+using MyShop.Web.Mappings;
+using MyShop.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using MyShop.Web.Infrastructure.Extentions;
 
 namespace MyShop.Web.Api
 {
     [RoutePrefix("api/postcategory")]
     public class PostCategoryController : ApiBaseController
     {
-        IPostCategoryService _postCategoryService;   
+        IPostCategoryService _postCategoryService;
         public PostCategoryController(IErrorService errorService, IPostCategoryService postCategoryService) : base(errorService)
         {
             this._postCategoryService = postCategoryService;
@@ -24,41 +28,45 @@ namespace MyShop.Web.Api
         {
             return CreateHttpResponse(requestMessage, () =>
             {
-                HttpResponseMessage response = null;
-                if (!ModelState.IsValid)
-                {
-                    requestMessage.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
-                }
-                else
-                {
-                    var listCategory = _postCategoryService.GetAll();
-                    _postCategoryService.Save();
-                    response = requestMessage.CreateResponse(HttpStatusCode.OK, listCategory);
-                }
+                var mapper = AutoMapperConfiguration.Configure().CreateMapper();
+                var listCategory = _postCategoryService.GetAll();
+
+                //var listPostCategoryVm = Mapper.Map<List<PostCategoryViewModel>>(listCategory);
+
+                var listPostCategoryVm = listCategory.Select
+                            (
+                              emp => mapper.Map<PostCategory, PostCategoryViewModel>(emp)
+                            );
+                HttpResponseMessage response = requestMessage.CreateResponse(HttpStatusCode.OK, listCategory);
+
                 return response;
             });
         }
 
-        public HttpResponseMessage Post(HttpRequestMessage requestMessage,PostCategory postCategory)
+        [Route("add")]
+        public HttpResponseMessage Post(HttpRequestMessage requestMessage, PostCategoryViewModel postCategoryVm)
         {
             return CreateHttpResponse(requestMessage, () =>
              {
                  HttpResponseMessage response = null;
-                 if(!ModelState.IsValid)
+                 if (!ModelState.IsValid)
                  {
                      requestMessage.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
                  }
                  else
                  {
-                     var category =_postCategoryService.Add(postCategory);
+                     PostCategory postCategory = new PostCategory();
+                     postCategory.UpdatePostCategory(postCategoryVm);
+                     var category = _postCategoryService.Add(postCategory);
                      _postCategoryService.Save();
-                     response=requestMessage.CreateResponse(HttpStatusCode.Created,category);
+                     response = requestMessage.CreateResponse(HttpStatusCode.Created, category);
                  }
                  return response;
              });
         }
 
-        public HttpResponseMessage Put(HttpRequestMessage requestMessage, PostCategory postCategory)
+        [Route("update")]
+        public HttpResponseMessage Put(HttpRequestMessage requestMessage, PostCategoryViewModel postCategoryVm)
         {
             return CreateHttpResponse(requestMessage, () =>
             {
@@ -69,7 +77,9 @@ namespace MyShop.Web.Api
                 }
                 else
                 {
-                    _postCategoryService.Update(postCategory);
+                    var postCategoryDb = _postCategoryService.GetById(postCategoryVm.ID);
+                    postCategoryDb.UpdatePostCategory(postCategoryVm);
+                    _postCategoryService.Update(postCategoryDb);
                     _postCategoryService.Save();
                     response = requestMessage.CreateResponse(HttpStatusCode.OK);
                 }

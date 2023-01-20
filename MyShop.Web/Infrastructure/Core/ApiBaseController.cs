@@ -66,7 +66,7 @@ namespace MyShop.Web.Infrastructure.Core
             }
             catch (Exception e)
             {
-
+                Trace.WriteLine($"Error \"{e.Message}\"");
             }
         }
     }

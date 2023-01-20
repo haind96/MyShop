@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MyShop.Model.Models
 {
-    public class ApplicationUser : IdentityUser
+    public class ApplicationRoleUser : IdentityUser
     {
         [MaxLength(256)]
         public string FullName { set; get; }
